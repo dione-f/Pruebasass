@@ -1,0 +1,16 @@
+
+$colorbg: rgb(234, 53, 33)
+
+$primary: rgb(234, 53, 33)
+$secondary:
+
+
+$redesSociales:(
+    twitter
+    facebook
+    send-email
+)
+
+@each $red $color in $redesSociales{
+    .btn--#($red)
+}

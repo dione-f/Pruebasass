@@ -1,0 +1,47 @@
+@mixin fontstyle {
+    color: burlywood;
+    text-transform: uppercase; 
+    background-color: coral;
+}
+
+@mixin reset-pm {
+    padding: 0;
+    margin: 0;}
+    
+
+    *{
+        @include reset-pm;
+        box-sizing: border-box;
+        }
+
+$colorbg: rgb(234, 53, 33)
+
+$widthN : 200px
+
+.tituloN{
+    color:$colorbg
+   
+    
+
+} 
+
+.textoN{ color: $colorbg;
+
+}
+
+.btn-enviar {
+    width:200px;
+    height:50px;
+    background-color:white;
+    text-align:center;
+    color:black;
+    border-radius:20px;
+    border:1px solid black;}
+    
+    .boton--aceptar{
+        @extend .boton;background-color:green;
+        color:yellow;}
+        
+        .boton--cancelar{
+            @extend .boton;background-color:red;
+            color:yellow;}
